@@ -1,11 +1,16 @@
 #include<stdio.h>
 int main()
 {
-int a=10, b=20;
-printf("Before swap a=%d b=%d" a,b);
-a=a+b;//a=30 (10+20)
-b=a-b;//b=10 (30-20)
-a=a-b;//a=20 (30-10)
-printf("\nAfter swap a=%d b=%d" ,a,b);
+int a,b,temp;
+	printf("Enter value of a.\n");
+	scanf("%d",&a);
+	printf("Enter value of b.\n");
+	scanf("%d",&b);
+	temp=a;
+	a=b;
+	b=temp;
+	printf("After swapping.\n");
+	printf("Value of a is %d.\n",a);
+	printf("Value of b is %d.\n",b);
 return 0;
 }
